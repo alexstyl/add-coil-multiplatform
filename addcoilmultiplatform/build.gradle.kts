@@ -1,7 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
 import org.jetbrains.compose.internal.utils.getLocalProperty
-import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
 
 plugins {
     alias(libs.plugins.compose)
@@ -15,7 +14,7 @@ plugins {
 
 val publishGroupId = "com.alexstyl"
 val publishArtifactId = "addcoilmultiplatform"
-val publishVersion = "1.2.0"
+val publishVersion = "3.0.0-rc01"
 val githubUrl = "github.com/alexstyl/addcoilmultiplatform"
 
 java {
@@ -42,7 +41,7 @@ kotlin {
 
     jvm()
 
-    @OptIn(ExperimentalWasmDsl::class) wasmJs {
+    wasmJs {
         browser()
     }
 
