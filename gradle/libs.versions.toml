@@ -4,13 +4,11 @@ compose = "1.6.11"
 agp = "8.2.0"
 
 coil3 = "3.0.0-alpha06"
-kotlinx-coroutines-android = "1.8.1-Beta"
 kotlinx-coroutines-swing = "1.8.0"
 
-ktor = "3.0.0-wasm2"
+ktor = "3.0.0-beta-2"
 
 [libraries]
-#kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines-android" }
 kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines-swing" }
 
 coil = { module = "io.coil-kt.coil3:coil", version.ref = "coil3" }

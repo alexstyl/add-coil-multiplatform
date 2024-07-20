@@ -15,7 +15,7 @@ plugins {
 
 val publishGroupId = "com.alexstyl"
 val publishArtifactId = "addcoilmultiplatform"
-val publishVersion = "1.0.0"
+val publishVersion = "1.1.0"
 val githubUrl = "github.com/alexstyl/addcoilmultiplatform"
 
 java {

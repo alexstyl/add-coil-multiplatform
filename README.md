@@ -11,20 +11,11 @@ modification in your code base.
 
 ## Installation
 
-```kotlin
-// settings.gradle.kts
-dependencyResolutionManagement {
-    repositories {
-        maven("https://maven.pkg.jetbrains.space/kotlin/p/wasm/experimental")
-    }
-}
-```
-
 ```
 // build.gradle.kts
 commonMain.dependencies {
     dependencies {
-        implementation("com.alexstyl:addcoilmultiplatform:1.0.0")
+        implementation("com.alexstyl:addcoilmultiplatform:1.1.0")
     }
 }
 ```
