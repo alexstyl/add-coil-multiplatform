@@ -1,0 +1,55 @@
+site_name: 'Composables Core'
+site_description: "Unstyled, fully accessible Compose Multiplatform components that you can customize to your heart's desire."
+site_url: https://composablehorizons.github.io/composables-core/
+docs_dir: 'docs'
+
+repo_name: 'Composables Core'
+repo_url: https://github.com/composablehorizons/composables-core/
+
+theme:
+  name: material
+  font:
+    text: Fira Sans
+    code: Jetbrains Mono
+  features:
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      primary: white
+      accent: gray
+
+nav:
+  - 'Dialog' : dialog.md
+  - 'Dropdown Menu' : menu.md
+
+plugins:
+  - social
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/composablehorizons/
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/alexstyl
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.betterem
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: |
+  <a href="https://github.com/composablehorizons"><img  src="composables.svg"></a>
