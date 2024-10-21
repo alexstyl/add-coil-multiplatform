@@ -5,9 +5,7 @@ for those new to the Kotlin Multiplatform world.
 
 This dependency setups all the complicated wiring for you, using a single dependency.
 
-`NOTE:` This dependency adds no new code to your project other than what Coil provides. We are hoping that when Coil
-Multiplatform hits a stable release, you will be able to swap out this dependency with the official one without any
-modification in your code base.
+`NOTE:` This dependency adds Ktor to your project and uses it as the HTTP engine for request. We do not support other engines.
 
 ## Installation
 
@@ -15,7 +13,8 @@ modification in your code base.
 // build.gradle.kts
 commonMain.dependencies {
     dependencies {
-        implementation("com.alexstyl:addcoilmultiplatform:1.1.0")
+        // version matches the version of coil used
+        implementation("com.alexstyl:addcoilmultiplatform:3.0.0-rc01")
     }
 }
 ```
