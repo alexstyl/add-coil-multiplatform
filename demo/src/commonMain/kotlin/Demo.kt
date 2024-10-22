@@ -1,6 +1,7 @@
 package com.alexstyl.addcoilmultiplatform.demo
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -43,9 +44,10 @@ fun CoilDemo() {
         )
     }.flatten()
     LazyVerticalGrid(
-        GridCells.Fixed(3),
+        columns = GridCells.Adaptive(250.dp),
         horizontalArrangement = Arrangement.spacedBy(4.dp),
-        verticalArrangement = Arrangement.spacedBy(4.dp)
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+        contentPadding = PaddingValues(4.dp)
     ) {
         items(images) { image ->
             AsyncImage(
